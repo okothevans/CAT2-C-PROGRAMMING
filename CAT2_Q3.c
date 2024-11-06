@@ -7,7 +7,11 @@ CT102/G/23443/24
 #include <stdio.h>
 
 int main() {
-    float hoursworked, hourlywage, grosspay, tax, netpay;
+    float hoursworkedy;
+    float hourlywage;
+    float grosspay;
+    float tax;
+    floatnetpay;
     float overtimehours = 0;
     
     printf("Enter number of hoursworked in a week: ");
@@ -18,11 +22,9 @@ int main() {
     
     //Calculate overtime
     if (hoursworked > 40) {
-   
         overtimehours = hoursworked - 40;
         grosspay = (40 * hourlywage) + (overtimehours * hourlywage * 1.5);
     } else {
-       
         grosspay = hoursworked * hourlywage;
     }
 
