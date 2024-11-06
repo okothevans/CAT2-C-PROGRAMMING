@@ -7,7 +7,9 @@ CT102/G/23443/24
 #include<string.h> 
 
 struct employee{
-	char name[25],dept[20],email[50];
+	char name[25];
+        char dept[20];
+        email [50];
 	int id;
 	float salary;
 	
